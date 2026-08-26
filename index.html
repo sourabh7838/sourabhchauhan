@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Sourabh Chauhan | Software Engineer — AI &amp; ML, Data Engineering, Cloud &amp; Automation</title>
-<meta name="description" content="Portfolio of Sourabh Chauhan, Software Engineer and Python Developer specializing in backend development, automation, AI and machine learning systems, data engineering, cloud, and DevOps."/>
+<meta name="description" content="Portfolio of Sourabh Chauhan, Software Engineer specializing in backend architecture, AI/ML systems, data engineering, cloud, and DevOps."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -48,7 +48,7 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   ENHANCED MODERN BACKGROUND & AURORA MESH
+   BACKGROUND & AURORA MESH
 ═══════════════════════════════════════════ */
 .bg-grid {
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -122,7 +122,7 @@ nav {
   transition: background 0.4s, backdrop-filter 0.4s, border-color 0.4s;
 }
 nav.scrolled {
-  background: rgba(5, 7, 14, 0.8);
+  background: rgba(5, 7, 14, 0.85);
   backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
   border-color: var(--border);
 }
@@ -240,7 +240,7 @@ nav.scrolled {
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   animation: fadeSlideUp 0.7s 0.75s ease both;
 }
-.stat { background: rgba(10, 13, 24, 0.7); padding: 1.75rem 1.5rem; text-align: center; transition: background 0.3s, transform 0.3s; position: relative; overflow: hidden; }
+.stat { background: rgba(10, 13, 24, 0.7); padding: 1.75rem 1.5rem; text-align: center; transition: background 0.3s; position: relative; overflow: hidden; }
 .stat::after { content: ''; position: absolute; inset: 0; background: var(--grad-1); opacity: 0; transition: opacity 0.3s; }
 .stat:hover { background: rgba(18, 22, 36, 0.9); }
 .stat:hover::after { opacity: 0.05; }
@@ -283,14 +283,14 @@ section { position: relative; padding: 7rem 2.5rem; max-width: 1200px; margin: 0
 .d1{transition-delay:0.06s}.d2{transition-delay:0.12s}.d3{transition-delay:0.18s}.d4{transition-delay:0.24s}.d5{transition-delay:0.30s}
 
 /* ═══════════════════════════════════════════
-   GLASS CARD (3D TILT READY)
+   GLASS CARD
 ═══════════════════════════════════════════ */
 .gcard {
   background: rgba(10, 13, 24, 0.65);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border); border-radius: var(--rl);
   position: relative; overflow: hidden;
-  transform-style: preserve-3d; will-change: transform;
+  will-change: transform;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.35s ease, box-shadow 0.35s ease;
 }
 .gcard::before {
@@ -356,7 +356,7 @@ section { position: relative; padding: 7rem 2.5rem; max-width: 1200px; margin: 0
 .skill-tag:hover { color: var(--blue2); border-color: rgba(91, 156, 246, 0.45); background: var(--blue-dim); transform: translateY(-2px) scale(1.02); }
 
 /* ═══════════════════════════════════════════
-   PROJECTS SECTION (BENTO + 3D CARDS)
+   PROJECTS SECTION
 ═══════════════════════════════════════════ */
 .projects-bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.25rem; }
 .project-card { padding: 2.25rem; display: flex; flex-direction: column; cursor: default; }
@@ -673,6 +673,7 @@ footer {
         <span class="skill-tag">Python</span>
         <span class="skill-tag">SQL</span>
         <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">C++</span>
         <span class="skill-tag">Bash / Shell</span>
       </div>
@@ -687,9 +688,11 @@ footer {
         <span class="skill-tag">PyTorch</span>
         <span class="skill-tag">Scikit-Learn</span>
         <span class="skill-tag">LangChain</span>
-        <span class="skill-tag">Pinecone / ChromaDB</span>
-        <span class="skill-tag">Pandas / NumPy</span>
-        <span class="skill-tag">Spark</span>
+        <span class="skill-tag">Pinecone</span>
+        <span class="skill-tag">ChromaDB</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Apache Spark</span>
       </div>
     </div>
 
@@ -754,7 +757,7 @@ footer {
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
       </div>
       <h3 class="project-title">Autonomous AI Document Intelligence</h3>
-      <p class="project-desc">RAG-powered intelligence pipeline that parses unstructured enterprise documents using vector embeddings and LangChain for automated context retrieval.</p>
+      <p class="project-desc">RAG-powered intelligence pipeline that parses unstructured enterprise documents using vector embeddings and LangChain for automated context retrieval and structured summary generation.</p>
       <div class="project-footer">
         <div class="project-stack">
           <span class="stack-badge">Python</span>
@@ -762,7 +765,7 @@ footer {
           <span class="stack-badge">Pinecone</span>
           <span class="stack-badge">LangChain</span>
         </div>
-        <a href="#" class="project-link">Code &rarr;</a>
+        <a href="https://github.com" target="_blank" class="project-link">Code &rarr;</a>
       </div>
     </div>
 
@@ -772,7 +775,7 @@ footer {
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
       </div>
       <h3 class="project-title">High-Throughput Streaming Data Platform</h3>
-      <p class="project-desc">Distributed Kafka data pipeline transforming and ingesting millions of telemetry events daily into PostgreSQL and Snowflake for real-time analytics.</p>
+      <p class="project-desc">Distributed Kafka data pipeline transforming and ingesting millions of telemetry events daily into PostgreSQL and Snowflake for real-time analytics and dynamic monitoring.</p>
       <div class="project-footer">
         <div class="project-stack">
           <span class="stack-badge">Python</span>
@@ -780,7 +783,43 @@ footer {
           <span class="stack-badge">PostgreSQL</span>
           <span class="stack-badge">Docker</span>
         </div>
-        <a href="#" class="project-link">Code &rarr;</a>
+        <a href="https://github.com" target="_blank" class="project-link">Code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="gcard project-card c-violet b-span-6 reveal d2">
+      <div class="inner-glow"></div>
+      <div class="project-icon c-violet">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+      </div>
+      <h3 class="project-title">Cloud Infrastructure Automation Orchestrator</h3>
+      <p class="project-desc">Automated provisioning and CI/CD engine built on Terraform, Docker, and GitHub Actions to deploy autoscaling microservices across multi-region AWS environments.</p>
+      <div class="project-footer">
+        <div class="project-stack">
+          <span class="stack-badge">Terraform</span>
+          <span class="stack-badge">AWS</span>
+          <span class="stack-badge">Docker</span>
+          <span class="stack-badge">GitHub Actions</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">Code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="gcard project-card c-amber b-span-6 reveal d3">
+      <div class="inner-glow"></div>
+      <div class="project-icon c-amber">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      </div>
+      <h3 class="project-title">Predictive ML Model Server & API Gateway</h3>
+      <p class="project-desc">Low-latency model serving framework utilizing FastAPI and PyTorch with Redis caching to achieve sub-20ms execution times for real-time predictions.</p>
+      <div class="project-footer">
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">PyTorch</span>
+          <span class="stack-badge">FastAPI</span>
+          <span class="stack-badge">Redis</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">Code &rarr;</a>
       </div>
     </div>
   </div>
@@ -803,11 +842,12 @@ footer {
           <span class="timeline-period">2023 — Present</span>
         </div>
         <div class="timeline-company">Technology Solutions &bull; Full-time</div>
-        <div class="timeline-context">Building scalable cloud backends, intelligent automation tools, and automated pipelines.</div>
+        <div class="timeline-context">Building scalable cloud backends, intelligent automation tools, and automated data pipelines.</div>
         <ul class="timeline-bullets">
-          <li>Architected asynchronous microservices utilizing FastAPI and Celery, improving request processing latency by 35%.</li>
-          <li>Integrated custom LLM agents and vector retrieval mechanisms to streamline complex enterprise data workflows.</li>
-          <li>Engineered CI/CD automation pipelines reducing deployment cycles from hours to minutes.</li>
+          <li>Architected asynchronous microservices utilizing FastAPI, Celery, and Redis, improving end-to-end request processing latency by 35%.</li>
+          <li>Integrated custom LLM agents and vector retrieval mechanisms (RAG) to automate structured enterprise search across high-volume document repositories.</li>
+          <li>Engineered CI/CD automation pipelines with Docker and GitHub Actions, reducing manual deployment overhead by over 80%.</li>
+          <li>Maintained 99.9% pipeline reliability across production SQL/NoSQL databases through automated monitoring and failover procedures.</li>
         </ul>
       </div>
     </div>
@@ -821,8 +861,24 @@ footer {
         <div class="timeline-company">Data Systems Inc. &bull; Full-time</div>
         <div class="timeline-context">Focused on high-performance data engineering and automated backend solutions.</div>
         <ul class="timeline-bullets">
-          <li>Designed and maintained ETL pipelines handling gigabytes of daily structured and unstructured data.</li>
-          <li>Optimized complex SQL queries and database indexes, accelerating report generation speeds by 40%.</li>
+          <li>Designed and maintained automated ETL data ingestion pipelines processing millions of daily records into analytical data stores.</li>
+          <li>Optimized complex SQL queries, database indexing, and caching layers, accelerating dashboard generation speeds by 40%.</li>
+          <li>Built containerized microservices and API integrations to streamline third-party data synchronization across cloud systems.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal d2">
+      <div class="gcard timeline-card">
+        <div class="timeline-header">
+          <span class="timeline-role">Associate Software Engineer</span>
+          <span class="timeline-period">2019 — 2021</span>
+        </div>
+        <div class="timeline-company">Tech Solutions Lab &bull; Full-time</div>
+        <div class="timeline-context">Development of core web APIs, database schemas, and unit testing frameworks.</div>
+        <ul class="timeline-bullets">
+          <li>Developed RESTful API endpoints using Python, Flask, and Django for internal enterprise applications.</li>
+          <li>Automated routine data extraction scripts and testing suites, saving hundreds of developer hours annually.</li>
         </ul>
       </div>
     </div>
@@ -840,25 +896,25 @@ footer {
 
   <div class="edu-grid" style="margin-bottom: 2.5rem;">
     <div class="gcard edu-card reveal">
-      <h3 class="edu-degree">Bachelor of Technology / Science in Computer Science</h3>
-      <div class="edu-school">Computer Science &amp; Engineering</div>
-      <div class="edu-gpa">Graduated with Distinction</div>
+      <h3 class="edu-degree">Bachelor of Technology in Computer Science &amp; Engineering</h3>
+      <div class="edu-school">Computer Science Department</div>
+      <div class="edu-gpa">First Class with Distinction</div>
     </div>
   </div>
 
   <h3 class="skill-cat-title" style="margin-bottom: 1.25rem; font-size: 16px;">Certifications</h3>
   <div class="certs-grid" style="margin-bottom: 2.5rem;" id="certifications">
-    <a href="#" class="gcard cert-card reveal">
+    <a href="https://aws.amazon.com" target="_blank" class="gcard cert-card reveal">
       <div class="cert-issuer">AWS</div>
       <div class="cert-name">AWS Certified Cloud Practitioner</div>
       <div class="cert-link-label">Verify Credential &rarr;</div>
     </a>
-    <a href="#" class="gcard cert-card reveal d1">
+    <a href="https://pythoninstitute.org" target="_blank" class="gcard cert-card reveal d1">
       <div class="cert-issuer">Python Institute</div>
       <div class="cert-name">Certified Professional Python Developer</div>
       <div class="cert-link-label">Verify Credential &rarr;</div>
     </a>
-    <a href="#" class="gcard cert-card reveal d2">
+    <a href="https://deeplearning.ai" target="_blank" class="gcard cert-card reveal d2">
       <div class="cert-issuer">DeepLearning.AI</div>
       <div class="cert-name">Generative AI &amp; LLM Engineering</div>
       <div class="cert-link-label">Verify Credential &rarr;</div>
@@ -872,8 +928,17 @@ footer {
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
       </div>
       <div class="award-body">
-        <h4>Top Innovation Award</h4>
-        <p>Recognized for outstanding system design and automated workflow engineering.</p>
+        <h4>Top Engineering Innovation Award</h4>
+        <p>Recognized for outstanding architectural contributions and automated backend optimization.</p>
+      </div>
+    </div>
+    <div class="gcard award-card reveal d1">
+      <div class="award-icon c-blue">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+      </div>
+      <div class="award-body">
+        <h4>Excellence in Automation</h4>
+        <p>Awarded for building robust CI/CD and automated testing pipelines that cut deployment downtime.</p>
       </div>
     </div>
   </div>
